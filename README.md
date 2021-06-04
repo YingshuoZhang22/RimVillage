@@ -4,7 +4,7 @@ open-source code repository for RimVillage
 # Bugs
 - 
 
-# TODO
+# Todo
 - 
 
 # Future Features
