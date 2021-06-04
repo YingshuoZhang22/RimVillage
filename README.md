@@ -2,12 +2,12 @@
 open-source code repository for RimVillage
 
 # Contents
-1. 📕 [Wiki](#Wiki)
-2. ✔[Todo](#Todo)
-3. ❌[Bug](#Bug)
-4. ⭐[Current Features](#Current-Features)
-5. 🆕[Future Features](#Future-Features)
-6. ❤[Contact](#Contact)
+1. 📕 [***Wiki***](#Wiki)
+2. ✔[***Todo***](#Todo)
+3. ❌[***Bug***](#Bug)
+4. ⭐[***Current Features***](#Current-Features)
+5. 🆕[***Future Features***](#Future-Features)
+6. ❤[***Contact***](#Contact)
 
 # Wiki
 - None
