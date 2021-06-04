@@ -1,3 +1,11 @@
 # RimVillage
 open-source code repository for RimVillage
-123123
+
+# Bugs
+- 
+
+# TODO
+- 
+
+# Future Features
+- 
