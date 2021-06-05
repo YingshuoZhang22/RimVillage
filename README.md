@@ -20,13 +20,14 @@ open-source code repository for RimVillage
 - [❤] **BUILDING**
   - [ ] village center sign
     - [x] init block
+    - [x] loot tables
     - [ ] recipe
     - [ ] new texture
     - [ ] functionality
 - [❤] **LOGIC**
   - [ ] building detection
 - [❤] **OTHERS**
-  - [ ] creative tab (item groups)
+  - [x] creative tab (item groups)
 
 # Bugs
 1. None
