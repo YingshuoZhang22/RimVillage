@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rimvillage:blocks/example_block_texture"
+    }
+}

@@ -19,7 +19,8 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.stream.Collectors;
 
-import com.rimvillage.items.ItemInit;
+import com.rimvillage.init.BlockInit;
+import com.rimvillage.init.ItemInit;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(RimVillageCore.MOD_ID)
@@ -40,7 +41,9 @@ public class RimVillageCore
         // Register the doClientStuff method for modloading
         bus.addListener(this::doClientStuff);
 
+        // Register the items and blocks
         ItemInit.ITEMS.register(bus);
+        BlockInit.BLOCKS.register(bus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -52,6 +55,17 @@ public class RimVillageCore
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
+
+    // 
+    // 
+    // 
+    // 
+    // WARNING: temporarily do NOT touch the code below
+    // 
+    // 
+    // 
+    // 
+    // 
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client

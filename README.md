@@ -14,9 +14,9 @@ open-source code repository for RimVillage
 
 # Todo
 1. [x] invite everyone to the project
-2. [x] initialize project
-    - [ ] create villager entity
-    - [ ] create village center block
+2. [x] init: project
+    - [ ] init: villager entity
+    - [ ] initial - block - village center
 
 # Bugs
 1. None
