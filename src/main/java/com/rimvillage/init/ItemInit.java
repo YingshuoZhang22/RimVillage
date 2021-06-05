@@ -13,9 +13,9 @@ public class ItemInit {
     
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, RimVillageCore.MOD_ID);
     // Items
-    public static final RegistryObject<Item> TEST_ITEM = ITEMS.register("test_item", () -> new Item(new Item.Properties().group(ItemGroup.MISC)));
+    public static final RegistryObject<Item> TEST_ITEM = ITEMS.register("test_item", () -> new Item(new Item.Properties().group(RimVillageCore.RIMVILLAGE_GROUP)));
     // Block Items
-    public static final RegistryObject<BlockItem> VILLAGE_CENTER_SIGN = ITEMS.register("village_center_sign", () -> new BlockItem(BlockInit.VILLAGE_CENTER_SIGN.get(), new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final RegistryObject<BlockItem> VILLAGE_CENTER_SIGN = ITEMS.register("village_center_sign", () -> new BlockItem(BlockInit.VILLAGE_CENTER_SIGN.get(), new Item.Properties().group(RimVillageCore.RIMVILLAGE_GROUP)));
 
 
 }

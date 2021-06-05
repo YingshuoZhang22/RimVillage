@@ -2,6 +2,9 @@ package com.rimvillage.core;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.NonNullList;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -30,6 +33,8 @@ public class RimVillageCore
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "rimvillage";
 
+    public static final ItemGroup RIMVILLAGE_GROUP = new RimVillageGroup("rimvillage_tab");
+
     public RimVillageCore() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         // Register the setup method for modloading
@@ -54,6 +59,24 @@ public class RimVillageCore
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+    }
+
+    public static class RimVillageGroup extends ItemGroup {
+
+        public RimVillageGroup(String label) {
+            super(label);
+        }
+
+        @Override
+        public ItemStack createIcon() {
+            return ItemInit.VILLAGE_CENTER_SIGN.get().getDefaultInstance();
+        }
+
+        @Override
+        public void fill(NonNullList<ItemStack> items) {
+            super.fill(items);
+        }
+        
     }
 
     // 
