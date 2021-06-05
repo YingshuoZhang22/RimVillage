@@ -26,7 +26,7 @@ open-source code repository for RimVillage
 - [❤] **LOGIC**
   - [ ] building detection
 - [❤] **OTHERS**
-  - [ ] create mode: new tab for RimVillage
+  - [ ] creative tab (item groups)
 
 # Bugs
 1. None
