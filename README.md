@@ -20,6 +20,7 @@ open-source code repository for RimVillage
 - [❤] **BUILDING**
   - [ ] village center sign
     - [x] init block
+    - [ ] recipe
     - [ ] new texture
     - [ ] functionality
 - [❤] **LOGIC**
