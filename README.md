@@ -13,10 +13,19 @@ open-source code repository for RimVillage
 - None
 
 # Todo
-1. [x] invite everyone to the project
-2. [x] init: project
-    - [ ] init: villager entity
-    - [ ] initial - block - village center
+- [x] invite everyone to the project
+- [x] init: project
+- [❤] **VILLAGER**
+  - [ ] init a villager entity
+- [❤] **BUILDING**
+  - [ ] village center sign
+    - [x] init block
+    - [ ] new texture
+    - [ ] functionality
+- [❤] **LOGIC**
+  - [ ] building detection
+- [❤] **OTHERS**
+  - [ ] create mode: new tab for RimVillage
 
 # Bugs
 1. None
