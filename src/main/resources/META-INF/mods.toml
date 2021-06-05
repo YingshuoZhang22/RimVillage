@@ -32,7 +32,7 @@ version="${file.jarVersion}" #mandatory
 displayName="RimVillage" #mandatory
 
 # A URL to query for updates for this mod. See the JSON update specification <here>
-# updateJSONURL="http://myurl.me/" #optional
+updateJSONURL="http://myurl.me/" #optional
 
 # A URL for the "homepage" for this mod, displayed in the mod UI
 displayURL="https://github.com/Bistard/RimVillage/tree/master" #optional
@@ -47,8 +47,7 @@ credits="All Thanks to the mankind." #optional
 authors="Cow, Monkey, Pig and Frank" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
-description=
-'''
+description='''
 This is RimVillage mod, the BEST village mod.
 '''
 
