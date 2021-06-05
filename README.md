@@ -29,7 +29,7 @@ open-source code repository for RimVillage
 - [❤] **OTHERS**
   - [x] creative tab (item groups)
 
-# Bugs
+# Bug
 1. None
 
 # Current-Features
