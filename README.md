@@ -19,12 +19,14 @@ open-source code repository for RimVillage
   - [ ] init a villager entity
 - [❤] **BUILDING**
   - [ ] recruit sign
-    - [ ] init custom block
+    - [x] init custom block model
+    - [ ] better model (more detailed)
     - [ ] loot tables
     - [ ] recipe
     - [ ] functionality
   - [ ] village center sign
-    - [x] init block
+    - [x] init example block texture
+    - [ ] init custom block model
     - [x] loot tables
     - [ ] recipe
     - [ ] new texture
