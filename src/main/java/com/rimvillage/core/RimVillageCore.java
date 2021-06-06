@@ -33,6 +33,7 @@ public class RimVillageCore
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "rimvillage";
 
+    // creative tab
     public static final ItemGroup RIMVILLAGE_GROUP = new RimVillageGroup("rimvillage_tab");
 
     public RimVillageCore() {
