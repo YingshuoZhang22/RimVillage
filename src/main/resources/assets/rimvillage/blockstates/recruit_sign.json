@@ -1,5 +1,8 @@
 {
     "variants": {
-        "": {"model": "rimvillage:block/recruit_sign"}
+        "facing=north": { "model": "rimvillage:block/recruit_sign" },
+        "facing=south": { "model": "rimvillage:block/recruit_sign", "y": 180 },
+        "facing=west":  { "model": "rimvillage:block/recruit_sign", "y": 270 },
+        "facing=east":  { "model": "rimvillage:block/recruit_sign", "y": 90 }
     }
 }
