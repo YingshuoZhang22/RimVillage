@@ -21,8 +21,8 @@ open-source code repository for RimVillage
   - [ ] recruit sign
     - [x] init custom block model
     - [ ] better model (more detailed)
-    - [ ] loot tables
-    - [ ] recipe
+    - [x] loot tables
+    - [x] recipe
     - [ ] functionality
   - [ ] village center sign
     - [x] init example block texture
