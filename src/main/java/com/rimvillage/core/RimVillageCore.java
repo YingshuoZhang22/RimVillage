@@ -37,19 +37,20 @@ public class RimVillageCore
     public static final ItemGroup RIMVILLAGE_GROUP = new RimVillageGroup("rimvillage_tab");
 
     public RimVillageCore() {
-        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-        // Register the setup method for modloading
-        bus.addListener(this::setup);
-        // Register the enqueueIMC method for modloading
-        bus.addListener(this::enqueueIMC);
-        // Register the processIMC method for modloading
-        bus.addListener(this::processIMC);
-        // Register the doClientStuff method for modloading
-        bus.addListener(this::doClientStuff);
+        final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        // Register the items and blocks
-        ItemInit.ITEMS.register(bus);
-        BlockInit.BLOCKS.register(bus);
+        // Register the setup method for modloading
+        modEventBus.addListener(this::setup);
+        // Register the enqueueIMC method for modloading
+        modEventBus.addListener(this::enqueueIMC);
+        // Register the processIMC method for modloading
+        modEventBus.addListener(this::processIMC);
+        // Register the doClientStuff method for modloading
+        modEventBus.addListener(this::doClientStuff);
+
+        // Registration
+        ItemInit.ITEMS.register(modEventBus);
+        BlockInit.BLOCKS.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
