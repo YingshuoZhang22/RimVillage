@@ -50,9 +50,9 @@ open-source code repository for RimVillage
 - **QQ chats**: 441063418
 
 # Team
-- 老师好伞兵 (Cow)
-- 火药桶手办 (Frank Han)
-- 伤悲茅坑 (Monkey)
-- 音乐和设备 (Pig)
+- Cow
+- Frank Han
+- Monkey
+- Pig
 
 ps.cowsb
