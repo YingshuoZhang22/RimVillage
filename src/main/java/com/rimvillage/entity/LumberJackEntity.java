@@ -12,6 +12,7 @@ public class LumberJackEntity extends BaseVillagerEntity {
     public LumberJackEntity(EntityType<? extends VillagerEntity> entityType, World worldIn,
             ProfessionType professionType, String name, Boolean isMale) {
         super(entityType, worldIn, professionType, name, isMale);
+        
     }
 
     @Override

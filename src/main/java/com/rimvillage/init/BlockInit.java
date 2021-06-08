@@ -1,7 +1,7 @@
 package com.rimvillage.init;
  
+import com.rimvillage.block.BlockRecruitSign;
 import com.rimvillage.core.RimVillageCore;
-import com.rimvillage.blocks.BlockRecruitSign;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;

@@ -23,6 +23,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.stream.Collectors;
 
 import com.rimvillage.init.BlockInit;
+import com.rimvillage.init.EntityInit;
 import com.rimvillage.init.ItemInit;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -51,6 +52,7 @@ public class RimVillageCore
         // Registration
         ItemInit.ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
+        EntityInit.ENTITIES.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

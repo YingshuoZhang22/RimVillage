@@ -11,7 +11,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 
-public abstract class BaseVillagerEntity extends VillagerEntity {
+public class BaseVillagerEntity extends VillagerEntity {
 
     protected final String name;
     protected final boolean isMale;
@@ -28,6 +28,8 @@ public abstract class BaseVillagerEntity extends VillagerEntity {
         this.professionType = professionType;
     }
     
-    protected abstract void initEntityAI();
+    protected void initEntityAI() {
+        
+    }
 
 }

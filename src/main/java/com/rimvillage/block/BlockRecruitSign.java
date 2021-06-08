@@ -1,4 +1,4 @@
-package com.rimvillage.blocks;
+package com.rimvillage.block;
 
 import com.rimvillage.base.BaseHorizontalBlock;
 
