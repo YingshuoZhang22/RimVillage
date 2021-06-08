@@ -16,6 +16,8 @@ open-source code repository for RimVillage
 - [x] invite everyone to the project
 - [x] init: project
 - [❤] **VILLAGER**
+  - [x] init a rimvillager egg
+    - [ ] functionality
   - [ ] init a villager entity
 - [❤] **BUILDING**
   - [ ] recruit sign
