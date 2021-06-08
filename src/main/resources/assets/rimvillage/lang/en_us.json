@@ -1,7 +1,8 @@
 {
     "itemGroup.rimvillage_tab": "RimVillage",
-    
+
     "item.rimvillage.test_item": "test item",
+    "item.rimvillage.test_item_2": "test item 2",
     "item.rimvillage.rimvillager_egg": "rimvillager egg",
 
     "block.rimvillage.recruit_sign": "recruit sign",
