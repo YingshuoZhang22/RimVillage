@@ -1,17 +1,16 @@
 package com.rimvillage.entity;
 
-import com.rimvillage.base.BaseVillagerEntity;
+import com.rimvillage.base.BaseRimVillagerEntity;
 import com.rimvillage.util.ProfessionType;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.merchant.villager.VillagerEntity;
 import net.minecraft.world.World;
 
-public class LumberJackEntity extends BaseVillagerEntity {
+public class LumberJackEntity extends BaseRimVillagerEntity {
 
-    public LumberJackEntity(EntityType<? extends VillagerEntity> entityType, World worldIn,
-            ProfessionType professionType, String name, Boolean isMale) {
-        super(entityType, worldIn, professionType, name, isMale);
+    public LumberJackEntity(EntityType<? extends VillagerEntity> entityType, World worldIn, String name, Boolean isMale) {
+        super(entityType, worldIn, name, isMale);
         
     }
 

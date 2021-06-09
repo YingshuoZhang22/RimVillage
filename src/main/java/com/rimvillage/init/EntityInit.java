@@ -1,11 +1,8 @@
 package com.rimvillage.init;
 
-import com.rimvillage.base.BaseVillagerEntity;
 import com.rimvillage.core.RimVillageCore;
-import com.rimvillage.entity.LumberJackEntity;
 
 import net.minecraft.entity.EntityType;
-import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 

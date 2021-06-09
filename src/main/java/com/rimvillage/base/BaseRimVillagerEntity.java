@@ -11,21 +11,19 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 
-public class BaseVillagerEntity extends VillagerEntity {
+public class BaseRimVillagerEntity extends VillagerEntity {
 
-    protected final String name;
-    protected final boolean isMale;
+    protected final String NAME;
+    protected final boolean ISMALE;
     protected int age;
-    protected final ProfessionType professionType;
     protected BlockPos bedPosition = null;
     protected BlockPos homeFrame = null;
 
-    public BaseVillagerEntity(EntityType<? extends VillagerEntity> entityType, World worldIn, ProfessionType professionType, String name, Boolean isMale) {
+    public BaseRimVillagerEntity(EntityType<? extends VillagerEntity> entityType, World worldIn, String name, Boolean isMale) {
         super(entityType, worldIn);
-        this.name = name;
-        this.isMale = isMale;
+        this.NAME = name;
+        this.ISMALE = isMale;
         this.age = 0;
-        this.professionType = professionType;
     }
     
     protected void initEntityAI() {
