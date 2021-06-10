@@ -3,7 +3,6 @@ package com.rimvillage.init;
 import com.rimvillage.core.RimVillageCore;
 
 import com.rimvillage.entity.RimVillagerEntity;
-
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraftforge.fml.RegistryObject;
