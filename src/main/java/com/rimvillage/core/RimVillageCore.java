@@ -126,7 +126,7 @@ public class RimVillageCore
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
     // Event bus for receiving Registry Events)
-    @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
+    @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class RegistryEvents {
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
@@ -136,11 +136,11 @@ public class RimVillageCore
     }
 
     @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientEventHandler {       // there may be a bug
+    public class ClientEventHandler {       // there may be a bug
         @SubscribeEvent
-        public static void onClientSetUpEvent(FMLClientSetupEvent event) {
+        public void onClientSetUpEvent(FMLClientSetupEvent event) {
             RenderingRegistry.registerEntityRenderingHandler(EntityInit.rimvillagerEntity.get(), (EntityRendererManager manager) -> {
-                return new RimVillagerRender(manager);
+                return new RimVillagerRenderer(manager);
             });
         }
     }

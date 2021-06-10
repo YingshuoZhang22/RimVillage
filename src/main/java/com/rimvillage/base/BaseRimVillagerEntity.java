@@ -19,7 +19,7 @@ public class BaseRimVillagerEntity extends CreatureEntity {
     protected BlockPos bedPosition = null;
     protected BlockPos homeFrame = null;
 
-    public BaseRimVillagerEntity(EntityType<? extends VillagerEntity> entityType, World worldIn, String name, Boolean isMale) {
+    public BaseRimVillagerEntity(EntityType<? extends BaseRimVillagerEntity> entityType, World worldIn, String name, Boolean isMale) {
         super(entityType, worldIn);
         this.NAME = name;
         this.ISMALE = isMale;

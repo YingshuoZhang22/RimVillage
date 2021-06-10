@@ -2,11 +2,8 @@ package com.rimvillage.entity;
 
 import com.rimvillage.base.BaseRimVillagerEntity;
 import com.rimvillage.entity.AI.AiRimVillager;
-import com.rimvillage.util.ProfessionType;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.attributes.Attributes;
-import net.minecraft.entity.ai.goal.Goal;
-import net.minecraft.entity.merchant.villager.VillagerEntity;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
@@ -36,10 +33,11 @@ public class RimVillagerEntity extends BaseRimVillagerEntity {
         this.dataManager.register(COMBATLEVEL, 0);
     }
 
-    public RimVillagerEntity(EntityType<? extends VillagerEntity> entityType, World worldIn, ProfessionType professionType, String name, Boolean isMale) {
-        super(entityType, worldIn, name, isMale);
+    public RimVillagerEntity(EntityType<? extends BaseRimVillagerEntity> entityType, World worldIn) {
+        super(entityType, worldIn, "unknown", true);
         this.goalSelector.addGoal(0, new AiRimVillager(this));
         this.getAttributeManager().createInstanceIfAbsent(Attributes.MAX_HEALTH);
     }
+
 
 }
