@@ -11,7 +11,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 
-public class BaseRimVillagerEntity extends VillagerEntity {
+public class BaseRimVillagerEntity extends CreatureEntity {
 
     protected final String NAME;
     protected final boolean ISMALE;
