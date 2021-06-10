@@ -3,7 +3,7 @@ package com.rimvillage.init;
 import com.rimvillage.core.RimVillageCore;
 
 import com.rimvillage.entity.RimVillagerEntity;
-import com.rimvillage.entity.renderer.RimVillagerRender;
+import com.rimvillage.entity.renderer.RimVillagerRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;

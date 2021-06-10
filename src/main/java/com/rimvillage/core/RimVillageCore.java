@@ -1,6 +1,6 @@
 package com.rimvillage.core;
 
-import com.rimvillage.entity.renderer.RimVillagerRender;
+import com.rimvillage.entity.renderer.RimVillagerRenderer;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
@@ -140,7 +140,7 @@ public class RimVillageCore
         @SubscribeEvent
         public static void onClientSetUpEvent(FMLClientSetupEvent event) {
             RenderingRegistry.registerEntityRenderingHandler(EntityInit.rimvillagerEntity.get(), (EntityRendererManager manager) -> {
-                return new RimVillagerRender(manager);
+                return new RimVillagerRenderer(manager);
             });
         }
     }
