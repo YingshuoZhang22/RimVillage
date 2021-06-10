@@ -1,8 +1,11 @@
 package com.rimvillage.entity;
 
 import com.rimvillage.base.BaseRimVillagerEntity;
+import com.rimvillage.entity.ai.RimVillagerAi;
 import com.rimvillage.util.ProfessionType;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.ai.attributes.Attributes;
+import net.minecraft.entity.ai.goal.Goal;
 import net.minecraft.entity.merchant.villager.VillagerEntity;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
@@ -35,5 +38,8 @@ public class RimVillagerEntity extends BaseRimVillagerEntity {
 
     public RimVillagerEntity(EntityType<? extends VillagerEntity> entityType, World worldIn, ProfessionType professionType, String name, Boolean isMale) {
         super(entityType, worldIn, name, isMale);
+        this.goalSelector.addGoal(0, new RimVillagerAi(this));
+        this.getAttributeManager().createInstanceIfAbsent(Attributes.MAX_HEALTH);
     }
+
 }
