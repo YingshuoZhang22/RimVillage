@@ -1,12 +1,6 @@
 package com.rimvillage.base;
 
-import net.minecraft.entity.Entity;
-
-import com.rimvillage.util.ProfessionType;
-
 import net.minecraft.entity.CreatureEntity;
-import net.minecraft.entity.merchant.villager.VillagerEntity;
-import net.minecraft.entity.villager.VillagerType;
 import net.minecraft.entity.EntityType;
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;

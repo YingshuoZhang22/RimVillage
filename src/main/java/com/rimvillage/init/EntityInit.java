@@ -3,8 +3,7 @@ package com.rimvillage.init;
 import com.rimvillage.core.RimVillageCore;
 
 import com.rimvillage.entity.RimVillagerEntity;
-import com.rimvillage.entity.renderer.RimVillagerRenderer;
-import net.minecraft.entity.Entity;
+
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraftforge.fml.RegistryObject;
@@ -17,7 +16,8 @@ public class EntityInit {
 
     // public static final RegistryObject<EntityType<BaseVillagerEntity>> LUMBERJACK_ENTITY = ENTITIES.register("lumber_jack", () -> new BaseVillagerEntity(EntityInit.ENTITIES, ));
 
-    public static final RegistryObject<EntityType<RimVillagerEntity>> rimvillagerEntity = ENTITIES.register("rimvillager", 
+    public static final RegistryObject<EntityType<RimVillagerEntity>> RIMVILLAGER_ENTITY = ENTITIES.register("rimvillager", 
             () -> EntityType.Builder.create(RimVillagerEntity::new, EntityClassification.MISC).size(1.5F, 3).build("rimvillager"));
 
+    
 }
