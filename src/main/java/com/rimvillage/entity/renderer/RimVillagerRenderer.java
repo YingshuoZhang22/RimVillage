@@ -4,6 +4,6 @@ import com.rimvillage.entity.RimVillagerEntity;
 import com.rimvillage.entity.model.testModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
-public class RimVillagerRender extends MobRenderer<RimVillagerEntity, testModel> {
+public class RimVillagerRenderer extends MobRenderer<RimVillagerEntity, testModel> {
     
 }
