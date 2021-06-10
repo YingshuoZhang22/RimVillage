@@ -51,7 +51,7 @@ open-source code repository for RimVillage
 - **Email**: 1015813038@qq.com
 - **QQ chats**: 441063418
 
-# Team
+# Authors
 - Cow
 - Frank Han
 - Monkey
@@ -59,4 +59,4 @@ open-source code repository for RimVillage
 
 ps.cowsb
 
-test test
+Apache-2.0 
