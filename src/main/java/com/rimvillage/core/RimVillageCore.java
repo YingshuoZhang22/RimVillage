@@ -2,6 +2,9 @@ package com.rimvillage.core;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.entity.MobEntity;
+import net.minecraft.entity.ai.attributes.Attributes;
+import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
@@ -128,6 +131,13 @@ public class RimVillageCore
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
             // register a new block here
             LOGGER.info("HELLO from Register Block");
+        }
+
+        @SubscribeEvent
+        public static void setupAttributes(FMLCommonSetupEvent event) {
+            event.enqueueWork(() -> {
+                GlobalEntityTypeAttributes.put(EntityInit.RIMVILLAGER_ENTITY.get(), MobEntity.func_233666_p_().createMutableAttribute(Attributes.MAX_HEALTH, 10.0D).create());
+            });
         }
     }
 

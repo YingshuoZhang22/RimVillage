@@ -27,7 +27,7 @@ public class RimVillagerRenderer extends MobRenderer<RimVillagerEntity, testMode
     @Override
     public ResourceLocation getEntityTexture(RimVillagerEntity entity) {
         // TODO: 
-        return new ResourceLocation(RimVillageCore.MOD_ID, ""); 
+        return new ResourceLocation(RimVillageCore.MOD_ID, "textures/entity/testTure.png");
     }
 
     @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
