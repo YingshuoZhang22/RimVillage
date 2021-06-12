@@ -1,7 +1,7 @@
 package com.rimvillage.entity;
 
 import com.rimvillage.base.BaseRimVillagerEntity;
-import com.rimvillage.entity.AI.AiRimVillager;
+import com.rimvillage.entity.AI.RimVillagerAI;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.network.datasync.DataParameter;
@@ -20,6 +20,12 @@ public class RimVillagerEntity extends BaseRimVillagerEntity {
     private static final DataParameter<Integer> COOKINGLEVEL = EntityDataManager.createKey(RimVillagerEntity.class, DataSerializers.VARINT);
     private static final DataParameter<Integer> COMBATLEVEL = EntityDataManager.createKey(RimVillagerEntity.class, DataSerializers.VARINT);
 
+    public RimVillagerEntity(EntityType<? extends BaseRimVillagerEntity> entityType, World worldIn) {
+        super(entityType, worldIn, "unknown", true);
+        this.goalSelector.addGoal(0, new RimVillagerAI(this));
+        this.getAttributeManager().createInstanceIfAbsent(Attributes.MAX_HEALTH);
+    }
+
     //register each skill level, initial them to 0 (initial value may changed in the future)
     @Override
     protected void registerData(){
@@ -31,12 +37,6 @@ public class RimVillagerEntity extends BaseRimVillagerEntity {
         this.dataManager.register(MANUFACTURINGLEVEL, 0);
         this.dataManager.register(COOKINGLEVEL, 0);
         this.dataManager.register(COMBATLEVEL, 0);
-    }
-
-    public RimVillagerEntity(EntityType<? extends BaseRimVillagerEntity> entityType, World worldIn) {
-        super(entityType, worldIn, "unknown", true);
-        this.goalSelector.addGoal(0, new AiRimVillager(this));
-        this.getAttributeManager().createInstanceIfAbsent(Attributes.MAX_HEALTH);
     }
 
 
