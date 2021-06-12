@@ -15,7 +15,7 @@ public class testModel extends EntityModel<RimVillagerEntity> {
 
         body = new ModelRenderer(this);
         body.setRotationPoint(8.0F, 24.0F, -8.0F);
-        body.setTextureOffset(0, 0).addBox(-16.0F, -16.0F, 0.0F, 8.0F, 20.0F, 16.0F, 0.0F, false);
+        body.setTextureOffset(0, 0).addBox(-16.0F, -16.0F, 0.0F, 16.0F, 10.0F, 16.0F, 0.0F, false);
     }
 
     @Override

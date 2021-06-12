@@ -1,7 +1,7 @@
 package com.rimvillage.entity;
 
 import com.rimvillage.base.BaseRimVillagerEntity;
-import com.rimvillage.entity.AI.AiRimVillager;
+import com.rimvillage.entity.ai.AiRimVillager;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.network.datasync.DataParameter;
