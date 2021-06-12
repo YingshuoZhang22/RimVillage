@@ -1,4 +1,4 @@
-package com.rimvillage.entity.AI;
+package com.rimvillage.entity.ai;
 
 import com.rimvillage.entity.RimVillagerEntity;
 import net.minecraft.entity.ai.goal.Goal;
