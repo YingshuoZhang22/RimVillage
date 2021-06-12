@@ -36,26 +36,26 @@ public class RimVillageCore
     // Directly reference a log4j logger.
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "rimvillage";
-
     // creative tab (group)
     public static final ItemGroup RIMVILLAGE_GROUP = new RimVillageGroup("rimvillage_tab");
 
     public RimVillageCore() {
-        final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        // MOD bus
+        final IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         // Register the setup method for modloading
-        modEventBus.addListener(this::setup);
+        modBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading
-        modEventBus.addListener(this::enqueueIMC);
+        modBus.addListener(this::enqueueIMC);
         // Register the processIMC method for modloading
-        modEventBus.addListener(this::processIMC);
+        modBus.addListener(this::processIMC);
         // Register the doClientStuff method for modloading
-        modEventBus.addListener(this::doClientStuff);
+        modBus.addListener(this::doClientStuff);
 
         // Registration
-        ItemInit.ITEMS.register(modEventBus);
-        BlockInit.BLOCKS.register(modEventBus);
-        EntityInit.ENTITIES.register(modEventBus);
+        ItemInit.ITEMS.register(modBus);
+        BlockInit.BLOCKS.register(modBus);
+        EntityInit.ENTITIES.register(modBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
